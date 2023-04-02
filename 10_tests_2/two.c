@@ -5,12 +5,11 @@ int circle(double, double);
 int vertical(double, double);
 int horizontal(double, double);
 
-
 int main() {
 	// проверям, принадлежит ли точка закрашенной области
-	// если она больше x = 0 и y = 0, но меньше окружности
-	double x = 1.;
-	double y = 1.;
+	// если она больше x = 0, y = 0 и меньше окружности
+	double x = 1.5;
+	double y = 1.5;
 	if(((horizontal(x, y) && vertical(x, y)) && circle(x, y)) == 1) {
 	    printf("Данная точка принадлежит закрашенной области");
 	}
